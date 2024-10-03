@@ -14,7 +14,7 @@ return {
 			--vim.g.rasmus_bold_variables = false
 
 
-			vim.cmd.colorscheme("onedarkpro")
+			vim.cmd.colorscheme("onedark")
 		end,
 	},
 	{

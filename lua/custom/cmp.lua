@@ -8,9 +8,10 @@ local cmp = require("cmp")
 
 cmp.setup({
 	sources = {
-		{ name = "nvim_lsp" },
-		{ name = "path" },
-		{ name = "buffer" },
+		{ name = "nvim_lsp", priority = 10 },
+		{ name = "path", priority = 8 },
+		{ name = "buffer", priority = 7 },
+		{ name = "luasnip", priority = 6 },
 	},
 	mapping = {
 		["<c-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),

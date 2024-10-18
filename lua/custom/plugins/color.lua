@@ -18,7 +18,13 @@ return {
 			vim.keymap.set("n", "<leader>hf", "<CMD>HuezFavorites<CR>")
 			vim.keymap.set("n", "<leader>hl", "<CMD>HuezLive<CR>")
 		end,
-	},
+	},{
+
+		"olimorris/onedarkpro.nvim",
+		config = function()
+			vim.cmd.colorscheme("onedark")
+		end,
+  },
 	{
 		"xiyaowong/transparent.nvim",
 		config = function()

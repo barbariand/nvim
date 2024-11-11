@@ -2,10 +2,9 @@ return {
 	"tpope/vim-surround",
 	{
 		"NMAC427/guess-indent.nvim",
-		config = true,
-		opts = {
-			override_editorconfig = false, -- Respect .editorconfig if present
-		},
+		config = function()
+			require("guess-indent").setup { override_editorconfig = false}
+		end,
 	},
 	{ "folke/todo-comments.nvim", config = true },
 	{ "RaafatTurki/hex.nvim", config = true },

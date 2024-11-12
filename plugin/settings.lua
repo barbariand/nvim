@@ -16,7 +16,6 @@ opt.smartcase = true
 -- Indentation
 opt.tabstop = 4
 opt.shiftwidth = 2
-opt.expandtab = true
 opt.breakindent = true
 
 -- Timings

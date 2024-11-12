@@ -6,7 +6,7 @@ return {
 			require("guess-indent").setup({ override_editorconfig = false })
 		end,
 	},
-	{ "gpanders/editorconfig.nvim", config = true },
+	{ "gpanders/editorconfig.nvim"},
 	{ "folke/todo-comments.nvim", config = true },
 	{ "RaafatTurki/hex.nvim", config = true },
 	{

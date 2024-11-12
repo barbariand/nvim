@@ -3,10 +3,10 @@ return {
 	{
 		"NMAC427/guess-indent.nvim",
 		config = function()
-			require("guess-indent").setup { override_editorconfig = false}
+			require("guess-indent").setup({ override_editorconfig = false })
 		end,
 	},
-	{ 'editorconfig/editorconfig-vim'},
+	{ "gpanders/editorconfig.nvim", config = true },
 	{ "folke/todo-comments.nvim", config = true },
 	{ "RaafatTurki/hex.nvim", config = true },
 	{

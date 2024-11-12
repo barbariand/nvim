@@ -14,9 +14,10 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- Indentation
-opt.tabstop = 4
-opt.shiftwidth = 2
-opt.breakindent = true
+-- opt.tabstop = 4
+-- opt.shiftwidth = 2
+-- opt.expandtab = false
+-- opt.breakindent = true
 
 -- Timings
 opt.updatetime = 250

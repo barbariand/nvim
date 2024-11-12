@@ -6,6 +6,7 @@ return {
 			require("guess-indent").setup { override_editorconfig = false}
 		end,
 	},
+	{ 'editorconfig/editorconfig-vim'},
 	{ "folke/todo-comments.nvim", config = true },
 	{ "RaafatTurki/hex.nvim", config = true },
 	{

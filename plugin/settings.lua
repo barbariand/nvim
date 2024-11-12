@@ -9,6 +9,7 @@ g.noendofline = "binary"
 opt.inccommand = "split"
 opt.ignorecase = true
 opt.smartcase = true
+g.editorconfig = true
 
 -- Indentation
 -- opt.tabstop = 4

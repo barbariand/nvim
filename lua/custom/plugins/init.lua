@@ -6,7 +6,12 @@ return {
 			require("guess-indent").setup({ override_editorconfig = false })
 		end,
 	},
-	{ "gpanders/editorconfig.nvim"},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		opts = {},
+	},
+	{ "gpanders/editorconfig.nvim" },
 	{ "folke/todo-comments.nvim", config = true },
 	{ "RaafatTurki/hex.nvim", config = true },
 	{

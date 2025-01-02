@@ -41,8 +41,10 @@ return {
 	},
 	{
 		"siawkz/nvim-cheatsh",
+		enabled = false,
 		dependecies = {
 			"nvim-telescope/telescope.nvim",
+			"ibhagwan/fzf-lua",
 		},
 		config = function()
 			require("nvim-cheatsh").setup({

@@ -13,7 +13,7 @@ vim.pack.add({
 -- Plugins
 vim.pack.add({
   -- Theme
-  { src = "https://github.com/zenbones-theme/zenbones.nvim" },
+  { src = "https://github.com/olimorris/onedarkpro.nvim" },
   { src = "https://github.com/xiyaowong/transparent.nvim" },
 
   -- Development Environment
@@ -38,6 +38,7 @@ vim.pack.add({
   { src = "https://github.com/hat0uma/csvview.nvim" },
 
   -- Completion
+  { src = "https://github.com/stevearc/conform.nvim" },
   { src = "https://github.com/Saghen/blink.cmp", version = "v1" },
   { src = "https://github.com/mikavilpas/blink-ripgrep.nvim" },
 
@@ -70,6 +71,7 @@ require("config/lsp")
 require("config/signcolumn") -- statuscol
 
 -- Editing Enhancement
+require("config/conform")
 require("config/autoclose")
 require("config/align")
 require("config/mini")
@@ -101,7 +103,7 @@ require("config/orgmode")
 -- Colorscheme
 vim.o.termguicolors = true
 vim.o.background = 'dark'
-vim.cmd([[colorscheme forestbones]])
+vim.cmd("colorscheme onedark")
 
 require("transparent").setup({
   extra_groups = {

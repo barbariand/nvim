@@ -50,7 +50,6 @@ end
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local telescope = require("telescope.builtin")
-
     -- LSP Actions
     vim.keymap.set(
       "n",
@@ -118,5 +117,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
       desc = "Workspace Symbols",
     })
     vim.keymap.set("n", "ge", telescope.diagnostics)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+      vim.lsp.inlay_hint.enable(true, { bufnr = ev.buf })
+    end
   end
 })

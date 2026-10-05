@@ -1,5 +1,6 @@
 local formatter_bindings = {
   lua        = { "stylua" },
+  python     = { "ruff_format" },
   javascript = { "prettier", "prettierd" },
   typescript = { "prettier", "prettierd" },
   css        = { "prettier", "prettierd" },

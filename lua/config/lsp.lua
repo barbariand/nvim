@@ -1,4 +1,27 @@
+local capabilities = require("blink.cmp").get_lsp_capabilities()
+
 local servers = {
+  basedpyright = {
+    capabilities = capabilities,
+    settings = {
+      basedpyright = {
+        analysis = {
+          autoSearchPaths = true,
+          useLibraryCodeForTypes = true,
+          diagnosticMode = "openFilesOnly",
+          inlayHints = {
+            variableTypes = true,
+            callArgumentNames = true,
+            functionReturnTypes = true,
+            genericTypes = true,
+          },
+        },
+      },
+    },
+  },
+  ruff = {
+    capabilities = capabilities,
+  },
   -- For configuration files
   lua_ls = {
     settings = {
